@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello world</h1>
+        <h1>Changes locally can check its push or not</h1>
       </header>
     </div>
   );
