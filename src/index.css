@@ -1,13 +1,131 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif ;
 }
+.main_div {
+  width: 100%;
+  height: 100vh;
+  background:black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.center_div{
+  width: 25%;
+  height: 90vh;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba (0,0,0,0.5);
+  border-radius: 15px;
+}
+h1{
+  color: #16a085;
+  font-size: 50px;
+  margin-bottom: 30px;
+  min-width: 64px;
+  box-sizing: border-box;
+  font-family:"Comforta",cursive ;
+  font-weight: 550;
+  border-radius: 4px;
+  letter-spacing: 0.03;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 10px gray;
+}
+input{
+  text-align: center;
+  height: 40px;
+  border: 5px 5px 5px 5px;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 70%;
+  color: black;
+  
+}
+.inLineBlockTest{
+  display: inline-block;
+}
+.newBtn{
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  display: inline;
+  background-color:#16a085  ;
+  color: white ;
+  box-shadow: 5px 5px 15px -5px;
+  border-radius: 50%;
+  /* margin-left: 300px; */
+  /* margin-top: -700px; */
+
+}
+.newBtn:hover {
+  box-shadow: 2px 2px 2px ;
+  color: gray;
+  background-color: #16a085;
+  
+
+}
+ol {
+  margin-top: 30px;
+
+}
+ol li{
+  padding-left: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #16a085;
+  text-transform: capitalize;
+  list-style: none;
+}
+.todo_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo_style .deleteIcon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 15 0 35px ;
+  padding: 5px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.todo_style .deleteIcon {
+  background-color: transparent;
+  color: crimson;
+  box-shadow: 5px 5px 15px -5px rgba(225,0,0,0.5);
+}
+.todo_style .fa-times:hover .list_style{
+  color: crimson;
+}
+@media (max-width:768px){
+  .center_div{
+    width: 100%;
+  }
+  .main_div{
+    width: 100%;
+  }
+}
+.todo_style .fa-times{
+  margin: 0 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  margin-left: 5px;
+  min-height: 40px;
+  width: 40px;
+  color: #fff;
+  font-size: 30px;
 }
